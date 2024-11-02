@@ -1,0 +1,17 @@
+﻿<Window x:Class="CSV_Excel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="dataGrid" CanUserAddRows="False" AutoGenerateColumns="False" HorizontalAlignment="Stretch" IsReadOnly="False" VerticalAlignment="Stretch" Margin="10" HeadersVisibility="Column" />
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="10">
+            <Button Content="Экспорт в CSV" Click="ExportToCSV_Click" Margin="5" />
+            <Button Content="Импорт из CSV" Click="ImportFromCSV_Click" Margin="5" />
+            <Button Content="Экспорт в Excel" Click="ExportToExcel_Click" Margin="5" />
+            <Button Content="Импорт из Excel" Click="ImportFromExcel_Click" Margin="5" />
+            <Button Content="Добавить строку" Click="AddRow_Click" Margin="5" />
+            <Button Content="Добавить столбец" Click="AddColumn_Click" Margin="5" />
+        </StackPanel>
+    </Grid>
+</Window>
